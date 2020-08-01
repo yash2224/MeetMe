@@ -1,0 +1,14 @@
+{
+  "name": "meet_me",
+  "version": "1.0.0",
+  "description": "page for me",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss resources/css/style.css -w"
+  },
+  "author": "Tashi",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
