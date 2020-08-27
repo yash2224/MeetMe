@@ -1,0 +1,63 @@
+.header{
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+
+    &__intro{
+        background-color: #f9f0ff;
+        padding: 8rem 4rem;
+    }
+    
+    &__social-link {
+        display: flex;
+        margin-top: 7rem;
+        text-align: center;
+
+        a{
+            list-style: none;
+            text-transform: uppercase;
+            margin-right: 4rem;
+            font-weight: 400;
+            font-size: 1.2rem;
+            align-self: center;
+            letter-spacing: .4rem;
+            transition: letter-spacing 0.2s, color 0.2s, font-size 0.2s, margin-right 0.2s;
+            -webkit-transition: letter-spacing 0.2s, color 0.2s, font-size 0.2s, margin-right 0.2s;
+            -moz-transition: letter-spacing 0.2s, color 0.2s, font-size 0.2s, margin-right 0.2s;
+            -ms-transition: letter-spacing 0.2s, color 0.2s, font-size 0.2s, margin-right 0.2s;
+            -o-transition: letter-spacing 0.2s, color 0.2s, font-size 0.2s, margin-right 0.2s;
+
+            &:last-child{
+                margin: 0;
+            }
+
+            &:hover,
+            &:active{
+            letter-spacing: .6rem;
+            color:#9a717e;
+            cursor: pointer;
+            font-size: 1.3rem;
+            margin-right: 2.5rem;
+            }
+
+        }
+
+        p{
+            padding: 2rem 0;
+            margin: 2rem 0;
+        }
+        
+        
+    }
+    
+    
+    &__me{
+        height: 100vh;
+    }
+
+    &__my-info{
+        line-height: 3rem;
+        font-size: 1.5rem;
+    }
+}
+

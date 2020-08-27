@@ -1,0 +1,17 @@
+.u-text-margin{
+    margin-bottom: 2rem;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.u-text-align{
+    text-align: center;
+}
+
+.u-text-right{
+    text-align: right;
+}

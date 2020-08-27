@@ -1,0 +1,79 @@
+@import '../abstract/variables';
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.contents-left{
+    &__signature{
+        font-family: 'Mr De Haviland', cursive;
+        color: #f37b83;
+        letter-spacing: .2rem;
+        font-size: 4.5rem;
+        text-align: center;
+    }
+}
+
+.header{
+    
+    h1{
+        color:#f37b83;
+        text-transform: capitalize ;
+        letter-spacing: .2rem;
+        line-height: 8rem;
+        font-size: 9.5rem;
+        font-weight: 800;
+        margin: 4rem 0;
+    }
+    
+    h2{
+        font-weight: 400;
+        color: #492d31;
+        margin-bottom: 4rem;
+        font-size: 3rem;
+    }
+}
+
+.heading-secondary{
+    font-size: 3rem;
+    background-image: linear-gradient(to right, $color-pink, $color-pink-dark);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 3rem;
+}
+
+.heading-tertiary{
+    margin: 1rem 0;
+    font-weight: 400;
+    color: $color-light;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+}
+
+.long-copy{
+    font-size: 1.6rem;
+    padding: 2rem 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+
+    &:after{
+        content: "\201C";
+        font-size: 500%;
+        display: block;
+        position: absolute;
+        top: -4rem;
+        left: -1.5rem;
+    }
+}
+
+.intro-lines{
+    margin-bottom: 5rem;
+    line-height: 3rem;
+    font-size: 1.6rem;
+}

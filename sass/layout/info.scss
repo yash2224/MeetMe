@@ -1,0 +1,42 @@
+.contents-left{
+    flex:0 0 23%;
+    padding: 1rem;
+    color:$color-white;
+    background-color: $color-background;
+
+    &__fixed{
+        position: fixed;
+    }
+    
+    &__info{
+        margin-top: 1rem;
+        color: $color-white;
+        padding: 50px;
+
+        span{
+            color:$color-pink;
+            letter-spacing: 0.4rem;
+            font-size: 1.3rem;
+        }
+        
+        li{
+            list-style: none;
+            margin-bottom: 3rem;
+        }
+    }  
+    
+    &__signature{
+        margin-top: 4rem;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+
+
+        &:hover{
+            color:#f58990fa;
+        }
+    }
+
+}

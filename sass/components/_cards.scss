@@ -1,0 +1,176 @@
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 46rem;
+
+    &__side{
+        height:46rem;
+        background-color: $color-background;
+        transition: all 0.8s ease;
+        -webkit-transition: all 0.8s ease;
+        -moz-transition: all 0.8s ease;
+        -ms-transition: all 0.8s ease;
+        -o-transition: all 0.8s ease;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        backface-visibility: hidden;
+        overflow: hidden;
+        -webkit-backface-visibility: hidden;
+        border-radius: 3px;
+        
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+
+
+        box-shadow: 0 1.5rem 40px rgba($color-black, .15);
+
+
+        &--front{
+
+            background-color: $color-background;
+        }
+
+        &--back{
+            transform: rotateY(-180deg);
+            -webkit-transform: rotateY(-180deg);
+            -moz-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            -o-transform: rotateY(-180deg);
+
+            &-1{
+
+                background-image: linear-gradient(to bottom right, $color-blue, $color-blue-dark);
+            }
+
+            &-2{
+
+                background-image: linear-gradient(to bottom right, $color-pink, $color-pink-dark);
+            }
+
+            &-3{
+
+                background-image: linear-gradient(to bottom right, $color-green, $color-green-dark);
+            }
+        }
+
+    }
+
+    
+
+    &:hover &__side--front{
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        -moz-transform: rotateY(180deg);
+        -ms-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back{
+        transform: rotateY(0);
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        -ms-transform: rotateY(0);
+        -o-transform: rotateY(0);
+    }
+
+
+    &__picture{
+        background-size: cover;
+        height: 22rem;
+        background-blend-mode: soft-light;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        
+        &--1{
+            background-image: linear-gradient(to right bottom, $color-blue, $color-blue-dark), url(../../resources/img/england.jpg);
+        }
+
+        &--2{
+            background-image: linear-gradient(to right bottom, $color-pink, $color-pink-dark), url(../../resources/img/North_Macedonia.jpg);
+        }
+
+        &--3{
+            background-image: linear-gradient(to right bottom, $color-green, $color-green-dark), url(../../resources/img/Netherlands.jpg);
+        }
+    }
+
+    &__heading{
+        font-size: 2.4rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: right;
+        color: $color-white;
+        position: absolute;
+        top: 12rem;
+        right: 2rem;
+        width: 75%;
+    }
+
+    &__heading-span{
+        padding: 1rem 1.25rem;
+        box-decoration-break: clone;
+        
+        -webkit-box-decoration-break: clone;
+
+        &--1{
+            background-image: linear-gradient(to right bottom, rgba($color-blue, .85), rgba($color-blue-dark, .85));
+        }
+
+        &--2{
+            background-image: linear-gradient(to right bottom, rgba($color-pink, .85), rgba($color-pink-dark, .85));
+        }
+
+        &--3{
+            background-image: linear-gradient(to right bottom, rgba($color-green, .85), rgba($color-green-dark, .85));
+        }
+    }
+
+    &__details{
+
+        padding:3rem;
+        ul{
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            
+
+            li{
+                text-align: center;
+                font-size: 1.25rem;
+                padding: 1rem;
+                text-transform: uppercase;
+                
+
+                &:not(:last-child){
+                    border-bottom: 1px solid $color-dark;
+                }
+            }
+        }
+    }
+
+    &__info{
+
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+
+    }
+
+    &__explore{
+        margin-bottom: 8rem;
+
+        &--tagline{
+            font-size:3rem;
+            font-weight:400;
+            color:$color-white;
+
+        }
+    }
+}

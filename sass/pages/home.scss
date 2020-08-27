@@ -1,0 +1,89 @@
+.section-hobbies{
+    padding: 8rem 5rem 8rem 5rem;
+    background-color: $color-background-dark;
+
+    /*&__info{
+        background-color: $color-background;
+        padding: 4rem;
+    }*/
+
+    &__info{
+        padding-right: 4rem;
+    }
+}
+
+.section-about{
+    padding: 8rem 5rem;
+    background-color: $color-background-dark;
+
+    &__contents{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right:-10rem;
+
+        &__block{
+            background-color: $color-background;
+            width: 40%;
+            padding: 3rem;
+            margin-right: 4rem;
+            margin-bottom: 4rem;
+            box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+            transition: transform 0.3s;
+            
+            -webkit-transition: transform 0.3s;
+            -moz-transition: transform 0.3s;
+            -ms-transition: transform 0.3s;
+            -o-transition: transform 0.3s;
+
+
+            &:hover{
+                transform: translateY(-1.5rem) scale(1.03);
+                -webkit-transform: translateY(-1.5rem) scale(1.03);
+                -moz-transform: translateY(-1.5rem) scale(1.03);
+                -ms-transform: translateY(-1.5rem) scale(1.03);
+                -o-transform: translateY(-1.5rem) scale(1.03);
+            }
+
+        }
+    }
+}
+
+.section-hobbies p{
+    padding-bottom: 2rem;
+}
+
+
+.section-dreamplaces{
+    padding: 5rem 5rem 8rem 5rem;
+    background-color: $color-background-dark;
+}
+
+.section-its-me{
+    position: relative;
+    padding: 8rem 0 8rem 0;
+    background-color: rgba($color-background-dark, .3);
+}
+
+.get-in-touch{
+    padding: 8rem 5rem;
+    background-color: $color-background-dark;
+}
+
+.book{
+    background-image:linear-gradient(105deg, rgba($color-background, .8)0%, rgba($color-background, .8)50%,
+     transparent 50%), 
+      url('../../resources/img/nat-10.jpg');
+    background-size: 100%;
+    height: 50rem;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .2);
+
+
+    &__form{
+
+    }
+}
